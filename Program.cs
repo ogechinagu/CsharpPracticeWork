@@ -98,7 +98,7 @@
                     Question16();
                     break;
                 default:
-                    Console.WriteLine("Selected question is not implemented.");
+                    Console.WriteLine("Selected question is not implemented!");
                     break;
             }
         }
