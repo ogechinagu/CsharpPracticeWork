@@ -42,4 +42,4 @@ Feel free to check out the code and provide any feedback or suggestions.
 
 ## Appreciation
 
-Many thanks to my tutor, Lawrence Peters, Sterling Bank and InstinctHub, I hope to learn amazing stuff and translate my learning to coding solutions that would be of value to users. #React2FullStack 📚💻🚀
+Many thanks to my tutor, Lawrence Peters, Sterling Bank and InstinctHub, I hope to learn amazing stuff and translate my learning real solutions that would be of value to users. #React2FullStack 📚💻🚀
