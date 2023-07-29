@@ -23,13 +23,14 @@
                 Console.WriteLine("14) Write a program that checks a username against a stored value. How the user enters the username should NOT be case-sensitive.\r\n");
                 Console.WriteLine("15) Adapt program 1 so that it also takes in a password. If the user enters spaces after the password, the computer will trim them out automatically.\r\n");
                 Console.WriteLine("16) Write a program that will check if a phone number is of the correct length.\r\n");
+                Console.WriteLine("17) Write the code to generate the first 20 numbers in the Fibonacci sequence.\r\n");
 
                 string? input = Console.ReadLine();
                 if (input.Equals("Q", StringComparison.OrdinalIgnoreCase))
                 {
                     break; // Exit the program if the user enters 'Q'
                 }
-                else if (int.TryParse(input, out int selectedQuestion) && selectedQuestion >= 1 && selectedQuestion <= 16)
+                else if (int.TryParse(input, out int selectedQuestion) && selectedQuestion >= 1 && selectedQuestion <= 17)
                 {
                     Console.Clear();
                     RunSelectedQuestion(selectedQuestion);
@@ -39,7 +40,7 @@
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input. Please enter a number from 1 to 16 or 'Q' to quit.");
+                    Console.WriteLine("Invalid input. Please enter a number from 1 to 17 or 'Q' to quit.");
                 }
             }
         }
@@ -97,6 +98,9 @@
                 case 16:
                     Question16();
                     break;
+                case 17:
+                    Question17();
+                    break;
                 default:
                     Console.WriteLine("Selected question is not implemented!");
                     break;
@@ -109,7 +113,7 @@
             Console.WriteLine("Enter a number:");
             if (double.TryParse(Console.ReadLine(), out double number))
             {
-                double result = number / 2;
+                double result = (double)number / 2;
                 Console.WriteLine($"Result: {result}");
             }
             else
@@ -148,7 +152,7 @@
                 Console.WriteLine("Enter the second number:");
                 if (double.TryParse(Console.ReadLine(), out double number2) && number2 != 0)
                 {
-                    double result = number1 / number2;
+                    double result = (double)number1 / number2;
                     Console.WriteLine($"Result: {result}");
                 }
                 else
@@ -371,9 +375,9 @@
                 Console.WriteLine("Enter your password:");
                 string password = Console.ReadLine().Trim();
 
-                if (password.Equals("your_password", StringComparison.OrdinalIgnoreCase))
+                if (password.Equals("PASSWORD", StringComparison.OrdinalIgnoreCase))
                 {
-                    double result = number / 2;
+                    double result = (double)number / 2;
                     Console.WriteLine($"Result: {result}");
                 }
                 else
@@ -401,6 +405,26 @@
             {
                 Console.WriteLine("Not a vilid phone number.");
             }
+        }
+
+        static void Question17()
+        {
+            var fibonacciSequesnce = new List<int> { 1, 1 };
+
+            while (fibonacciSequesnce.Count < 20)
+            {
+                int number1 = fibonacciSequesnce[fibonacciSequesnce.Count - 1];
+                int number2 = fibonacciSequesnce[fibonacciSequesnce.Count - 2];
+                int number3 = number1 + number2;
+
+                fibonacciSequesnce.Add(number3);
+            }
+
+            foreach (var item in fibonacciSequesnce)
+            {
+                Console.WriteLine(item);
+            }
+
         }
     }
 }

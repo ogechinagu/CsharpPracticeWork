@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains my first C# console practice during the course of my training at the Sterling Academy Backend Engineering bootcamp. I solved 16 simple arithmetic, conditional statement, and loop problems. Through this project, I gained a solid understanding of C# basics, including handling user input, performing arithmetic operations, and utilizing conditional statements and loops effectively.
+This repository contains my first C# console practice during the course of my training at the Sterling Academy Backend Engineering bootcamp. I solved simple arithmetic, conditional statement, and loop problems. Through this project, I gained a solid understanding of C# basics, including handling user input, performing arithmetic operations, and utilizing conditional statements and loops effectively.
 
 ## Problems Solved
 
@@ -22,6 +22,7 @@ This repository contains my first C# console practice during the course of my tr
 14) Write a program that checks a username against a stored value. How the user enters the username should NOT be case sensitive.
 15) Adapt program 1 so that it also takes in a password. If the user enters spaces after the password the computer will trim them out automatically.
 16) Write a program that will check a phone number is of the correct length.
+17) Write the code to generate the first 20 numbers in the Fibonacci sequence.
 
 ## How to Run the Program
 
@@ -35,8 +36,8 @@ This repository contains my first C# console practice during the course of my tr
 During the development of this project, I referred to various online resources and tutorials to learn C# basics. Some of the most helpful resources were:
 
 - [Official Microsoft C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [C# Fundamentals for Absolute Beginners by Microsoft](https://www.microsoft.com/en-us/learning/course.aspx?cid=10525)
-- [C# Programming Yellow Book by Rob Miles](https://www.csharpcourse.com/)
+- [C# Fundamentals for Absolute Beginners by Microsoft](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/)
+- [W3School C# Tutorial](https://www.w3schools.com/cs)
 
 Feel free to check out the code and provide any feedback or suggestions. 
 
